@@ -1,0 +1,51 @@
+﻿<Window x:Class="Wypożyczalnia_skuterów_i_motorów.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Wypożyczalnia" Height="400" Width="600"
+        >
+    <Grid Background="#A09F95" >
+        <!-- Vehicle List -->
+        <ListBox x:Name="VehiclesListBox" HorizontalAlignment="Left" Height="200" Margin="10,10,0,0" VerticalAlignment="Top" Width="250"/>
+
+        <!-- Rental Details -->
+        <Label Content="User Name:" HorizontalAlignment="Left" Margin="280,10,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <TextBox Background="#f59605" x:Name="UserNameTextBox" HorizontalAlignment="Left" Margin="390,19,0,0" VerticalAlignment="Top" Width="200" Height="26">
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="10
+        "/>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+
+        <Label Content="Start Date:" HorizontalAlignment="Left" Margin="280,50,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <DatePicker x:Name="StartDatePicker" HorizontalAlignment="Left" Margin="390,55,0,0" VerticalAlignment="Top" Width="200"/>
+
+        <Label Content="End Date:" HorizontalAlignment="Left" Margin="280,90,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <DatePicker x:Name="EndDatePicker" HorizontalAlignment="Left" Margin="390,95,0,0" VerticalAlignment="Top" Width="200"/>
+
+        <!-- Buttons -->
+        <Button Background="#f59606" Content="Wypożycz" HorizontalAlignment="Left" Margin="10,220,0,0" VerticalAlignment="Top" Width="120" Click="RentVehicleButton_Click">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="10
+        "/>
+                </Style>
+            </Button.Resources>
+
+        </Button>
+        <Button Background="#f59606" Content="Zwróć" HorizontalAlignment="Left" Margin="140,220,0,0" VerticalAlignment="Top" Width="120">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="10
+        "/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+
+        <!-- Status Message -->
+        <TextBlock x:Name="StatusMessage" HorizontalAlignment="Left" Margin="10,260,0,0" VerticalAlignment="Top" Width="500" Height="40" TextWrapping="Wrap" Foreground="Green"/>
+        <Image Source="/images/motor2.png" Height="200px" Margin="221,149,-47,35"/>
+    </Grid>
+</Window>

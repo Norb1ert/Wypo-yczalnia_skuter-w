@@ -27,3 +27,5 @@ Microsoft Visual Studio, MySQL
 Wypożyczenie skuteru na okres x dni
 Wypożyczenie motoru na okres x dni
 Sprawdzenie czy dany pojazd jest zajęty
+Utworzenie użytkownika 
+Potwierdzenie wynajęcia pojazdu

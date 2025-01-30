@@ -1,0 +1,11 @@
+CREATE TABLE skutery (id_skutera int primary key IDENTITY(1, 1),data_produkcji date,stan_naladowania float,lokal_szer float,lokal_dlug float);
+
+CREATE TABLE uzytkownicy (id_uzytk int primary key IDENTITY(1, 1),nazwa varchar(40),email varchar(80));
+
+CREATE TABLE wypozyczenia (id_wypozyczenia int primary key IDENTITY(1, 1),id_skutera int,id_uzytk int,data_wypozyczenia DATETIME,data_oddania DATETIME, 
+FOREIGN KEY (id_skutera) REFERENCES skutery(id_skutera),
+FOREIGN KEY (id_uzytk) REFERENCES uzytkownicy(id_uzytk));
+
+insert into uzytkownicy (nazwa,email) values ('marrr3k','marrr3k@wp.pl');
+insert into skutery (data_produkcji,stan_naladowania,lokal_szer,lokal_dlug) values ('2010-01-01',0.5,52.2279687,21.0123081);
+insert into wypozyczenia (id_skutera,id_uzytk,data_wypozyczenia,data_oddania) values (1,1,'2025-01-01 12:12:12','2025-01-01 15:12:12');

@@ -19,7 +19,6 @@ C#
 MySQL
 VisualStudio
 Krita (do tworzenia loga)
-
 ### Wymagania wstępne: 
 Microsoft Visual Studio, MySQL
 
@@ -29,3 +28,10 @@ Wypożyczenie motoru na okres x dni
 Sprawdzenie czy dany pojazd jest zajęty
 Utworzenie użytkownika 
 Potwierdzenie wynajęcia pojazdu
+
+
+### Załączniki ze zdjęciami bazy danych
+
+https://cdn.discordapp.com/attachments/1325450504725069947/1334128589213270037/image.png?ex=679cb912&is=679b6792&hm=c5d1a244ad994afd047827d7daeed66ae61c21c58d4cce8d8a999268d271ac22&
+
+https://cdn.discordapp.com/attachments/1325450504725069947/1334128863889981480/image.png?ex=679cb954&is=679b67d4&hm=3e132837b5133f82ca53593fdb3468b0ec2dad3160c5ef516a4b98cda7780e31&
